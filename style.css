@@ -1,0 +1,104 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Form container styling */
+#form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Heading styling */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Paragraph styling */
+p {
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Label styling */
+label {
+    font-size: 16px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input field styling */
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect on inputs */
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+    border-color: #1E90FF; /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(30, 144, 255, 0.5); /* Blue glow effect */
+    outline: none;
+}
+
+/* Radio button styling */
+input[type="radio"] {
+    margin: 5px 10px 5px 0;
+}
+
+/* Button styling */
+button {
+    background-color: #1E90FF; /* Blue background */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #187bcd; /* Darker blue on hover */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 480px) {
+    #form {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    label,
+    input[type="text"],
+    input[type="number"],
+    select,
+    button {
+        font-size: 14px;
+    }
+}

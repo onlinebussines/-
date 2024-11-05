@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="background-color:rgba(100,150,200,0.5); height:32px;">
+        <h1 id="welcomeMessage"></h1>
+    </div>
+    <p>እንኳን ደህና መጡ!</p>
+    <strong>
+        <p>ይህ በኢትዮጵያውያን ባለሃብቶችና በአሜሪካን የበጎ አድራጎት ድርጅት በጥምረት ለኢትዮጵያውያን የተዘጋጀ በኦንላይን ገንዘብ መስራት የሚያስችል እድል ነው።</p>
+    </strong>
+      <div>
+          <h2>ማስታዎሻ</h2>
+          <ul>
+              <li>ስራው የሚሰራው በቴሌግራም ነው።</li>
+              <li>ስራውን ለመጀመር 250 የኢትዮጵያ ብር ያስፈልጋል።</li>
+              <li>ክፍያ ማግኘት የሚቻለው ስራውን ከጀመሩ ከ 17 ሰዓታት በኋላ ነው።</li>
+              
+          </ul>
+          <h4>የክፍያ መንገዶች</h4>
+          <ol>
+              <li>በኢትዮጵያ ንግድ ባንክ( CBE birr)</li>
+              <li>በቴሌብር</li>
+          </ol>
+      </div>
+    <script>
+        // Retrieve the user's name and father's name from localStorage
+        const userName = localStorage.getItem('fName');
+        const fatherName = localStorage.getItem('mname');
+
+        // Display the user's name
+        if (userName && fatherName) {
+            document.getElementById('welcomeMessage').innerText = `${userName} ${fatherName}`;
+        } else {
+            document.getElementById('welcomeMessage').innerText = 'Hello! Welcome to your dashboard.';
+        }
+    </script>
+   <div style="margin-left:80px;">
+    <strong><a href="https://t.me/online_bussiness_Ethiopia" target="_blank">ስራውን ይጀምሩ</a></strong>
+    </div>
+    <img src="birr.jpeg" alt="ምስል">
+    
+    <video width="100%" height="auto" autoplay muted loop> <source src="video.mp4" type="video/mp4"> Your browser does not support the video tag. </video>
+    
+    <p>ተጨማሪ መረጃዎችን ለማግኘትና ስራውን ለመጀመር 
+        <a href="https://t.me/online_bussiness_Ethiopia" target="_blank">እዚህ ይግቡ</a>
+    </p>
+</body>
+</html>
